@@ -1,0 +1,10 @@
+# Allow-list: ignore everything, then track only code and docs.
+# Data (sensors\, rust-logs\, crashes.csv, state.json, engine.log) must never be committed:
+# Rust's logs contain the Steam ID, player name and server address.
+*
+!.gitignore
+!README.md
+!_engine/
+_engine/*
+!_engine/crashlog.ps1
+!_engine/install-task.ps1
